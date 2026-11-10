@@ -1,8 +1,8 @@
 1:"$Sreact.fragment"
-2:I[7759,["500","static/chunks/500-c99b8dfd3de17c86.js","788","static/chunks/788-5c608c77c93b6776.js","3","static/chunks/3-9a190a724621b326.js","974","static/chunks/app/page-fb5261f61a19a8d6.js"],"TournamentPopup"]
-3:I[2003,["500","static/chunks/500-c99b8dfd3de17c86.js","788","static/chunks/788-5c608c77c93b6776.js","3","static/chunks/3-9a190a724621b326.js","974","static/chunks/app/page-fb5261f61a19a8d6.js"],"ReplayAnnouncement"]
-4:I[8075,["500","static/chunks/500-c99b8dfd3de17c86.js","788","static/chunks/788-5c608c77c93b6776.js","3","static/chunks/3-9a190a724621b326.js","974","static/chunks/app/page-fb5261f61a19a8d6.js"],"Hero"]
+2:I[7759,["500","static/chunks/500-c99b8dfd3de17c86.js","437","static/chunks/437-c5657c2ddb5126d7.js","788","static/chunks/788-51b8f3c2a84a607f.js","642","static/chunks/642-2c47146bc8b00821.js","974","static/chunks/app/page-3a5bef4cc8587415.js"],"TournamentPopup"]
+3:I[2003,["500","static/chunks/500-c99b8dfd3de17c86.js","437","static/chunks/437-c5657c2ddb5126d7.js","788","static/chunks/788-51b8f3c2a84a607f.js","642","static/chunks/642-2c47146bc8b00821.js","974","static/chunks/app/page-3a5bef4cc8587415.js"],"ReplayAnnouncement"]
+4:I[8075,["500","static/chunks/500-c99b8dfd3de17c86.js","437","static/chunks/437-c5657c2ddb5126d7.js","788","static/chunks/788-51b8f3c2a84a607f.js","642","static/chunks/642-2c47146bc8b00821.js","974","static/chunks/app/page-3a5bef4cc8587415.js"],"Hero"]
 5:I[484,[],"OutletBoundary"]
 6:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"preview-tools","children":[["$","p",null,{"children":"Existing homepage hero and November announcement. The popup appears after two seconds."}],["$","$L3",null,{}]]}],["$","$L4",null,{}]],null,["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"TYPJHSCI985x4S-kAaOis"}
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","div",null,{"className":"preview-tools","children":[["$","p",null,{"children":"Existing homepage hero and November announcement. The popup appears after two seconds."}],["$","$L3",null,{}]]}],["$","$L4",null,{}]],null,["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"femXpJ5S_u4y0KJp8Gm42"}
 7:null
