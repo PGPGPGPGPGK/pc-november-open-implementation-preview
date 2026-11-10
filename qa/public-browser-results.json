@@ -1,0 +1,40 @@
+[
+  {
+    "width": 1440,
+    "popup": true,
+    "navigation": true,
+    "singles": true,
+    "doubles": true,
+    "validation": true,
+    "consent": true,
+    "simulatedSuccess": true,
+    "simulatedCancel": true,
+    "simulatedFailure": true,
+    "partnerRequest": true,
+    "waitlistState": true,
+    "closedState": true,
+    "horizontalOverflow": false,
+    "externalRequests": 0,
+    "writeRequests": 0,
+    "pageErrors": []
+  },
+  {
+    "width": 390,
+    "popup": true,
+    "navigation": true,
+    "singles": true,
+    "doubles": true,
+    "validation": true,
+    "consent": true,
+    "simulatedSuccess": true,
+    "simulatedCancel": true,
+    "simulatedFailure": true,
+    "partnerRequest": true,
+    "waitlistState": true,
+    "closedState": true,
+    "horizontalOverflow": false,
+    "externalRequests": 0,
+    "writeRequests": 0,
+    "pageErrors": []
+  }
+]
