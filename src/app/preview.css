@@ -1,0 +1,25 @@
+/* Preview-only safety chrome and the existing /light colour layer mapped to
+   the generic registration component's grey utilities. Geometry is unchanged. */
+:root{--pc-font-display:var(--font-barlow-condensed);--pc-font-body:var(--font-dm-sans);--pc-font-mono:var(--font-jetbrains-mono)}
+.pc-display{font-family:var(--font-display);text-transform:uppercase;font-weight:700}
+.pc-label{font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.12em;font-size:.75rem}
+.preview-banner{background:#F3A6C3;color:#242C29;padding:12px 20px;text-align:center;font-size:13px;position:relative;z-index:90}
+.preview-nav{display:flex;flex-wrap:wrap;gap:16px;padding:16px 24px;border-bottom:1px solid #285A43;font-size:14px}
+.preview-nav a{text-decoration:underline;text-underline-offset:4px}
+.preview-tools,.preview-footer,.preview-state-review{padding:20px 24px;font-size:14px}
+.preview-tools button,.preview-state-review select{margin-top:8px;padding:8px 16px;border:1px solid #285A43;border-radius:8px}
+.preview-state-review{margin:16px auto;max-width:1100px;background:#D9E8C5;border-radius:12px}
+.preview-state-review summary{cursor:pointer;font-weight:600}
+.preview-state-review label{display:block;margin:12px 0}
+.preview-checkout{max-width:440px;width:calc(100% - 32px);margin:auto;padding:24px;border:2px solid #285A43;border-radius:16px;background:#F8F6EF;color:#242C29}
+.preview-checkout::backdrop{background:rgb(36 44 41 / 82%)}
+.preview-checkout h2{font-weight:700;font-size:22px;color:#285A43;margin-bottom:12px}
+.preview-checkout button{display:block;width:100%;padding:12px;margin-top:12px;border-radius:8px;background:#285A43;color:#F8F6EF}
+.preview-checkout button:last-child{background:#D9E8C5;color:#242C29}
+html:has([data-preview-palette="light"]){
+ [class~="bg-grey-950"],[class~="bg-grey-900"]{background-color:#F8F6EF}
+ [class~="border-grey-800"]{border-color:#285A43}
+ [class~="text-grey-300"],[class~="text-grey-500"],[class~="text-grey-600"]{color:#242C29}
+ [class~="bg-volt"][class~="text-black"]{color:#F8F6EF}
+ input[type="checkbox"]{accent-color:#285A43}
+}

@@ -1,0 +1,112 @@
+@import "tailwindcss";
+@source "../../../";
+
+/* ─────────────────────────────────────────────────────────────────
+ * Design tokens (Tailwind v4 @theme directive)
+ *
+ * Colors + fonts are exposed as Tailwind utilities (e.g. bg-navy-mid,
+ * font-display) via the @theme block below. The font CSS vars are set
+ * by next/font in app/layout.tsx.
+ *
+ * Existing admin pages that use inline hex (bg-[#111827]) keep working
+ * — new landing-page components should prefer the named utilities.
+ * ─────────────────────────────────────────────────────────────── */
+
+@theme inline {
+  /* Typography — next/font sets the underlying CSS vars on <html>.
+   * The `inline` keyword tells Tailwind to emit the var() directly
+   * rather than replacing it with its resolved value at build time. */
+  --font-display: var(--font-barlow-condensed);
+  --font-sans: var(--font-dm-sans);
+  --font-mono: var(--font-jetbrains-mono);
+
+  /* Brand colors — DESIGN.md */
+  --color-volt: #C8F400;
+  --color-volt-light: #D8FF20;
+  --color-volt-dim: #9BBF00;
+
+  --color-navy: #0A0F1E;
+  --color-navy-mid: #111827;
+  --color-navy-soft: #1C2535;
+  --color-navy-border: #2A3548;
+
+  --color-grey-100: #E2E8F0;
+  --color-grey-200: #CBD5E1;
+  --color-grey-400: #94A3B8;
+  --color-grey-600: #475569;
+  --color-grey-800: #1E293B;
+}
+
+:root {
+  --background: #0A0F1E;
+  --foreground: #F8FAFC;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), 'DM Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: rgba(200, 244, 0, 0.2);
+  color: #C8F400;
+}
+
+/* Respect reduced-motion for any Framer Motion animations on the
+ * landing page. Components that need to opt-out of this should set
+ * their own `useReducedMotion()` check. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+ * Animated background blobs — used by the Background Gradient
+ * Animation component. Kept in global CSS rather than styled-jsx
+ * because Next 16 RSC + styled-jsx interop is flaky.
+ * ─────────────────────────────────────────────────────────────── */
+@keyframes blob-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30%, -20%) scale(1.1); }
+  66% { transform: translate(-20%, 20%) scale(0.9); }
+}
+@keyframes blob-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-25%, 30%) scale(0.95); }
+  66% { transform: translate(20%, -15%) scale(1.15); }
+}
+@keyframes blob-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(20%, -30%) scale(1.05); }
+  66% { transform: translate(-30%, 10%) scale(0.9); }
+}
+.animate-blob-1 { animation: blob-1 18s ease-in-out infinite; }
+.animate-blob-2 { animation: blob-2 22s ease-in-out infinite; }
+.animate-blob-3 { animation: blob-3 26s ease-in-out infinite; }
+
+/* Safari on iOS runs out of GPU memory when an infinite transform is
+ * composited over a blur(24px+) filter, which is what the blob stack
+ * is. Users hit the "A problem repeatedly occurred" crash after
+ * ~45–60s on the page. Kill the animations on mobile (≤768px) and for
+ * anyone who's asked for reduced motion — the blobs still render,
+ * just static. Desktop Chromium/Firefox/Safari keep the motion. */
+@media (max-width: 768px), (prefers-reduced-motion: reduce) {
+  .animate-blob-1,
+  .animate-blob-2,
+  .animate-blob-3 {
+    animation: none;
+  }
+}

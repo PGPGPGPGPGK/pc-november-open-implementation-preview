@@ -1,0 +1,149 @@
+/* Experimental comparison palette. The original dark route is unaffected.
+ * All declarations below change colour only; fonts and geometry are inherited.
+ */
+html:has([data-preview-palette="light"]) {
+  --comparison-cream: #F8F6EF;
+  --comparison-green: #285A43;
+  --comparison-soft-green: #D9E8C5;
+  --comparison-pink: #F3A6C3;
+  --comparison-charcoal: #242C29;
+  color-scheme: light;
+
+  body {
+    background-color: var(--comparison-cream);
+    color: var(--comparison-charcoal);
+  }
+
+  ::selection {
+    background-color: var(--comparison-pink);
+    color: var(--comparison-charcoal);
+  }
+
+  [class~="bg-navy"], [class~="bg-[#0A0F1E]"] {
+    background-color: var(--comparison-cream);
+  }
+  [class~="bg-navy-mid"], [class~="bg-navy-soft"], [class~="bg-[#0F1522]"] {
+    background-color: var(--comparison-soft-green);
+  }
+  [class~="bg-navy-mid/40"] {
+    background-color: rgb(217 232 197 / 40%);
+  }
+  [class~="bg-navy/60"] {
+    background-color: rgb(248 246 239 / 60%);
+  }
+  [class~="bg-navy/95"] {
+    background-color: rgb(248 246 239 / 95%);
+  }
+  [class~="bg-[#0A0F1E]/85"] {
+    background-color: rgb(248 246 239 / 85%);
+  }
+  [class~="bg-black/50"] {
+    background-color: rgb(36 44 41 / 50%);
+  }
+  [class~="bg-black/75"] {
+    background-color: rgb(36 44 41 / 75%);
+  }
+  [class~="bg-volt/5"], [class~="bg-volt/10"],
+  [class~="bg-amber-300"], [class~="bg-amber-300/10"], [class~="bg-red-400/10"] {
+    background-color: var(--comparison-pink);
+  }
+  [class~="bg-volt"], [class~="bg-[#C8F400]"], [class~="bg-grey-400"], [class~="bg-navy-border"] {
+    background-color: var(--comparison-green);
+  }
+
+  [class~="text-white"], [class~="text-volt"], [class~="text-[#C8F400]"] {
+    color: var(--comparison-green);
+  }
+  [class~="text-grey-100"], [class~="text-grey-200"], [class~="text-grey-400"],
+  [class~="text-[#94A3B8]"], [class~="text-[#CBD5E1]"], [class~="text-[#F8FAFC]"],
+  [class~="text-navy"], [class~="text-[#0A0F1E]"], [class~="text-black"] {
+    color: var(--comparison-charcoal);
+  }
+  [class~="text-red-400"], [class~="text-amber-300"] {
+    color: var(--comparison-green);
+  }
+  [class~="bg-volt"][class~="text-navy"],
+  [class~="bg-[#C8F400]"][class~="text-[#0A0F1E]"] {
+    color: var(--comparison-cream);
+  }
+  [class~="bg-[#25D366]"] {
+    background-color: var(--comparison-pink);
+    color: var(--comparison-charcoal);
+  }
+  [role="radio"][aria-checked="true"] {
+    background-color: var(--comparison-pink);
+    color: var(--comparison-charcoal);
+  }
+
+  [class~="border-navy-border"], [class~="border-volt"], [class~="border-red-400"],
+  [class~="border-red-400/60"], [class~="border-amber-300/50"],
+  [class~="border-amber-300/60"], [class~="border-volt/30"],
+  [class~="border-volt/40"], [class~="border-volt/50"],
+  [class~="border-white/10"], [class~="border-white/[0.06]"] {
+    border-color: var(--comparison-green);
+  }
+  [class~="divide-navy-border"] > :not(:last-child) {
+    border-color: var(--comparison-green);
+  }
+  [class~="open:border-volt/50"][open] {
+    border-color: var(--comparison-green);
+  }
+  [class~="caret-volt"] { caret-color: var(--comparison-green); }
+  [class~="accent-[#C8F400]"] { accent-color: var(--comparison-green); }
+  [class~="placeholder:text-[#7D8CA3]"]::placeholder {
+    color: var(--comparison-charcoal);
+  }
+  [stroke="#C8F400"] { stroke: var(--comparison-green); }
+
+  /* Charcoal passes AA for small text on pink; deep green is only 4.20:1. */
+  [class~="bg-volt/5"], [class~="bg-volt/10"], [class~="bg-amber-300"],
+  [class~="bg-amber-300/10"], [class~="bg-red-400/10"] {
+    color: var(--comparison-charcoal);
+    [class*="text-"] { color: var(--comparison-charcoal); }
+  }
+
+  [class~="outline-volt"],
+  [class~="has-[:focus-visible]:outline-volt"]:has(:focus-visible),
+  [class~="focus-visible:outline-volt"]:focus-visible {
+    outline-color: var(--comparison-green);
+  }
+  [class~="focus-visible:outline-white"]:focus-visible {
+    outline-color: var(--comparison-green);
+  }
+  [class~="focus:border-volt"]:focus {
+    border-color: var(--comparison-green);
+  }
+  [class~="focus:ring-volt/25"]:focus, [class~="focus:ring-red-400/30"]:focus {
+    --tw-ring-color: var(--comparison-green);
+  }
+  [class~="focus:bg-[#C8F400]"]:focus {
+    background-color: var(--comparison-green);
+    color: var(--comparison-cream);
+  }
+
+  @media (hover: hover) {
+    [class~="hover:text-white"]:hover, [class~="hover:text-volt"]:hover,
+    [class~="hover:text-volt-light"]:hover, [class~="hover:text-[#CBD5E1]"]:hover,
+    [class~="hover:text-[#C8F400]"]:hover {
+      color: var(--comparison-green);
+    }
+    [class~="hover:bg-volt-light"]:hover, [class~="hover:bg-[#D8FF20]"]:hover,
+    [class~="hover:bg-volt/10"]:hover {
+      background-color: var(--comparison-pink);
+      color: var(--comparison-charcoal);
+    }
+    [class~="hover:border-volt"]:hover, [class~="hover:border-grey-400"]:hover,
+    [class~="hover:border-white/25"]:hover, [class~="hover:border-[#C8F400]/50"]:hover {
+      border-color: var(--comparison-green);
+    }
+  }
+
+  footer[class~="bg-[#070B16]"] {
+    background-color: var(--comparison-green);
+    color: var(--comparison-cream);
+
+    [class*="text-"], a { color: var(--comparison-cream); }
+    [class~="text-[#C8F400]"], a:hover { color: var(--comparison-soft-green); }
+    [class*="border-white"] { border-color: var(--comparison-soft-green); }
+  }
+}

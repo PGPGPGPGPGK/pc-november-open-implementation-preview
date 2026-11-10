@@ -1,0 +1,28 @@
+{
+  "name": "pc-november-open-implementation-preview",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Preview only: copied November Open components with in-memory fixtures and payments disabled",
+  "scripts": {
+    "dev": "next dev --webpack --hostname 127.0.0.1 --port 3020",
+    "build": "next build --webpack",
+    "typecheck": "tsc --noEmit",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "16.2.4",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "framer-motion": "12.38.0",
+    "clsx": "2.1.1",
+    "tailwind-merge": "2.6.0"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "22.10.0",
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0",
+    "tailwindcss": "4.2.4",
+    "@tailwindcss/postcss": "4.2.4"
+  }
+}

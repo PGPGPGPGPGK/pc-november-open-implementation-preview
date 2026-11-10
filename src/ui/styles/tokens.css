@@ -1,0 +1,62 @@
+/* Pickleball Central — design tokens (volt-on-navy, dark-first).
+ * Source of truth: docs/DESIGN.md (carried forward from v1 design system).
+ *
+ * Both raw CSS variables AND Tailwind v4 `@theme` declarations live in
+ * tailwind.css; this file is the unstyled token sheet that any
+ * consumer (web-admin's Vite + shadcn, mobile bridge, marketing
+ * static fallback) can import without pulling in Tailwind.
+ */
+
+:root {
+  color-scheme: dark;
+
+  /* ── Brand ──────────────────────────────────────────────────── */
+  --pc-volt: #c8f400;
+  --pc-volt-light: #d8ff20;
+  --pc-volt-dim: #9bbf00;
+
+  /* ── Backgrounds (dark navy scale) ───────────────────────────── */
+  --pc-navy: #0a0f1e;
+  --pc-navy-mid: #111827;
+  --pc-navy-soft: #1c2535;
+  --pc-navy-border: #2a3548;
+
+  /* ── Court accents ──────────────────────────────────────────── */
+  --pc-court-blue: #1e3a5f;
+  --pc-court-teal: #0d7377;
+
+  /* ── Text ───────────────────────────────────────────────────── */
+  --pc-white: #f8fafc;
+  --pc-grey-100: #e2e8f0;
+  --pc-grey-200: #cbd5e1;
+  --pc-grey-400: #94a3b8;
+  --pc-grey-600: #475569;
+  --pc-grey-800: #1e293b;
+
+  /* ── Status ─────────────────────────────────────────────────── */
+  --pc-success: #22c55e;
+  --pc-warning: #f59e0b;
+  --pc-error: #ef4444;
+  --pc-info: #3b82f6;
+
+  /* ── Typography ─────────────────────────────────────────────── */
+  /* Font families set by next/font in each app — referenced by var. */
+  --pc-font-display: var(--font-barlow-condensed, "Barlow Condensed"), system-ui, sans-serif;
+  --pc-font-body: var(--font-dm-sans, "DM Sans"), system-ui, sans-serif;
+  --pc-font-mono: var(--font-jetbrains-mono, "JetBrains Mono"), ui-monospace, monospace;
+
+  /* ── Radius ─────────────────────────────────────────────────── */
+  --pc-radius-sm: 4px;
+  --pc-radius-md: 8px;
+  --pc-radius-lg: 12px;
+  --pc-radius-xl: 16px;
+  --pc-radius-2xl: 24px;
+  --pc-radius-full: 9999px;
+
+  /* ── Shadows ────────────────────────────────────────────────── */
+  --pc-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --pc-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+  --pc-shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.6);
+  --pc-shadow-volt: 0 0 24px rgba(200, 244, 0, 0.25), 0 0 48px rgba(200, 244, 0, 0.1);
+  --pc-shadow-glow: 0 0 60px rgba(200, 244, 0, 0.15);
+}

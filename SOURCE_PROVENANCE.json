@@ -1,0 +1,66 @@
+{
+  "sourceCommit": "caf37f445967881f3eff58d9acab24d5532989a5",
+  "paletteSource": "PGPGPGPGPGK/pc-november-open-preview:src/app/light/palette.css",
+  "files": [
+    {
+      "source": "apps/web-marketing/src/components/landing/TournamentPopup.tsx",
+      "preview": "src/components/landing/TournamentPopup.tsx",
+      "sha256": "a9e3a6c4bc80744d1bfa97b2ecad93fa0a3e79d9188a23a826749b560f4d4195"
+    },
+    {
+      "source": "apps/web-marketing/src/components/landing/Hero.tsx",
+      "preview": "src/components/landing/Hero.tsx",
+      "sha256": "20959d0bc321ed9a99426e40e4a1f1c5b4e33cf1d1eac9ba076ca26c9fc41ca6"
+    },
+    {
+      "source": "apps/web-marketing/src/components/events/EventRegister.tsx",
+      "preview": "src/components/events/EventRegister.tsx",
+      "sha256": "8238c9e454f531622183f567afb1d3b6e4eecfb57def7841e98620b0754907ab"
+    },
+    {
+      "source": "apps/web-marketing/src/components/events/EventExtras.tsx",
+      "preview": "src/components/events/EventExtras.tsx",
+      "sha256": "a4214c0848e82f30f19a5ebf70feeeab964f8d936124816cd4dfd6a4ce35d6a3"
+    },
+    {
+      "source": "apps/web-marketing/src/components/events/EventRegistrationClosed.tsx",
+      "preview": "src/components/events/EventRegistrationClosed.tsx",
+      "sha256": "f14610dcbf384b1a8b3f51a2f41d6eb61cc8d4ea25934671c216750d4b9fe13d"
+    },
+    {
+      "source": "apps/web-marketing/src/app/events/[slug]/page.tsx",
+      "preview": "src/app/events/[slug]/page.tsx",
+      "sha256": "2b506f1df896e122d3a8bc5fd31e1c53ff7c5d2701f3e47c29da45b43ced9dbf"
+    },
+    {
+      "source": "apps/web-marketing/src/app/terms/page.tsx",
+      "preview": "src/app/terms/page.tsx",
+      "sha256": "cbad3b0e27e424b1d921dc1175996320913dafce1781a791cbd369e1379ba875"
+    },
+    {
+      "source": "apps/web-marketing/src/app/privacy/page.tsx",
+      "preview": "src/app/privacy/page.tsx",
+      "sha256": "bba38a2cf107eae1c03bfede9bf5da13da0418fb140412ced64bf2bb04e33fbf"
+    },
+    {
+      "source": "apps/web-marketing/src/components/legal/LegalLayout.tsx",
+      "preview": "src/components/legal/LegalLayout.tsx",
+      "sha256": "6f6137dec4b9f5b2548f9b6483e88e215f0662d3b023b76cde5f6cbc1dcde7f0"
+    },
+    {
+      "source": "apps/web-marketing/src/lib/api.ts",
+      "preview": "src/lib/api.ts",
+      "sha256": "9cb4b0573dead505b6df87250737fd0ef1ca785e1d6fb2ea6ca9e8a54a9009b7"
+    },
+    {
+      "source": "apps/web-marketing/src/lib/friendly-error.ts",
+      "preview": "src/lib/friendly-error.ts",
+      "sha256": "f9862752cf1d6df4283745c9820f5f150b480075d98f2e661f5727cd3267e96e"
+    },
+    {
+      "source": "apps/web-marketing/src/app/globals.css",
+      "preview": "src/app/globals.css",
+      "sha256": "0e75b7a1d47c45f603ea566f81deb85cd3933b869d6c74ecbe3872e2833e40da"
+    }
+  ]
+}
